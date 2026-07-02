@@ -75,6 +75,8 @@
   - `RESEND_API_KEY` — Resend API key (for contact form emails)
   - `CONTACT_EMAIL` — Destination email for contact form submissions
   - `VITE_PROJECTS_API` = `/api/projects`
+  - `VITE_SITE_TITLE`, `VITE_SITE_DESCRIPTION`, `VITE_AUTHOR`, `VITE_KEYWORDS`, `VITE_SITE_URL`, `VITE_OG_IMAGE` — SEO meta tags injected into `index.html` at build time via `%VITE_*%` placeholders
+- Local dev: copy `.env.example` to `.env` and fill in values.
 
 ## Dead code (do not recreate)
 
