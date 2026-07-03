@@ -38,6 +38,12 @@ export default {
           body: JSON.stringify({ query }),
         });
         const data = await response.json();
+        if (data.errors) {
+          return new Response(JSON.stringify({ error: data.errors[0].message }), {
+            status: 502,
+            headers: { 'Content-Type': 'application/json' },
+          });
+        }
         return new Response(JSON.stringify(data), {
           headers: { 'Content-Type': 'application/json' },
         });

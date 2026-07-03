@@ -37,12 +37,12 @@ export const useContactForm = () => {
     }
     setLoading(true);
     try {
-      const message = await sendEmail({
+      const data = await sendEmail({
         Name: state.name,
         Email: state.email,
         Message: state.message,
       });
-      setToast({ message, severity: 'success' });
+      setToast({ message: data.message || 'Message sent successfully', severity: 'success' });
       setState({ name: '', email: '', message: '', error: false });
     } catch (err) {
       setToast({

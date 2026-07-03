@@ -4,7 +4,7 @@ export interface EmailPayload {
   Message: string;
 }
 
-export const sendEmail = async (email: EmailPayload): Promise<string> => {
+export const sendEmail = async (email: EmailPayload): Promise<{ message?: string; error?: string }> => {
   const response = await fetch(
     import.meta.env.VITE_API_URL || '/api/send',
     {
