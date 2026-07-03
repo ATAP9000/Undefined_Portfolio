@@ -22,7 +22,6 @@
     "react-icons": "^5.7.0"
   },
   "devDependencies": {
-    "@cloudflare/vite-plugin": "^1.43.0",
     "@eslint/js": "^10.0.1",
     "@types/node": "^24.13.2",
     "@types/react": "^19.2.17",
