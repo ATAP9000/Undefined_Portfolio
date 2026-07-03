@@ -7,11 +7,6 @@
     "directory": "./dist",
     "not_found_handling": "single-page-application"
   },
-  "vars": {
-    "GITHUB_TOKEN": "",
-    "RESEND_API_KEY": "",
-    "CONTACT_EMAIL": ""
-  },
   "observability": {
     "enabled": true
   },
